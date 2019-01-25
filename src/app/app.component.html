@@ -1,3 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 <app-movie-list [childMovieList]="masterMovieList" (clickSender)="showMovie($event)"></app-movie-list>
+
+<app-show-selected-movie [childSelectedMovie]="selectedMovie"></app-show-selected-movie>

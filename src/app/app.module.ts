@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
+import { ShowSelectedMovieComponent } from './show-selected-movie/show-selected-movie.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MovieListComponent
+    MovieListComponent,
+    ShowSelectedMovieComponent
   ],
   imports: [
     BrowserModule
