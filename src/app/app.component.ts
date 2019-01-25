@@ -14,5 +14,11 @@ export class AppComponent {
   new Movie("The Hustler"),
   new Movie("Rear Window")
   ];
-  
+
+  selectedMovie = null;
+
+  showMovie(clickedMovie){
+    this.selectedMovie = clickedMovie;
+  }
+
 }
