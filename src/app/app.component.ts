@@ -21,4 +21,8 @@ export class AppComponent {
     this.selectedMovie = clickedMovie;
   }
 
+  finishedViewing(){
+    this.selectedMovie = null;
+  }
+
 }
