@@ -9,6 +9,7 @@ import { RedeemComponent } from './redeem/redeem.component';
 import { MyMoviesComponent } from './my-movies/my-movies.component';
 import { SearchComponent } from './search/search.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { GetStartedComponent } from './get-started/get-started.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { LogInComponent } from './log-in/log-in.component';
     RedeemComponent,
     MyMoviesComponent,
     SearchComponent,
-    LogInComponent
+    LogInComponent,
+    GetStartedComponent
   ],
   imports: [
     BrowserModule
