@@ -1,3 +1,3 @@
 <ul>
- <li *ngFor="let currentMovie of childMovieList">{{currentMovie.title}}</li>
+ <li *ngFor="let currentMovie of childMovieList" (click)="movieClicked(currentMovie)">{{currentMovie.title}}</li>
 </ul>
