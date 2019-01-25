@@ -8,6 +8,7 @@ import { ShowSelectedMovieComponent } from './show-selected-movie/show-selected-
 import { RedeemComponent } from './redeem/redeem.component';
 import { MyMoviesComponent } from './my-movies/my-movies.component';
 import { SearchComponent } from './search/search.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SearchComponent } from './search/search.component';
     ShowSelectedMovieComponent,
     RedeemComponent,
     MyMoviesComponent,
-    SearchComponent
+    SearchComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule
