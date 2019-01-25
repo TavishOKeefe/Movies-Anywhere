@@ -1,4 +1,4 @@
-# _Doctor-Lookup_
+# _Movies Anywhere_
 
 #### By _**Tavish OKeefe**_
 
@@ -17,9 +17,6 @@ _This application will do its best to replicate the functionality and appearance
 * _**Create Search component.**_
 * _**Create Log In component.**_
 * _**Create Get Started component.**_
-
-
-
 
 ## _Setup/Installation Requirements_
 

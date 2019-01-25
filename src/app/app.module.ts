@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { ShowSelectedMovieComponent } from './show-selected-movie/show-selected-movie.component';
 import { RedeemComponent } from './redeem/redeem.component';
+import { MyMoviesComponent } from './my-movies/my-movies.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { RedeemComponent } from './redeem/redeem.component';
     AppComponent,
     MovieListComponent,
     ShowSelectedMovieComponent,
-    RedeemComponent
+    RedeemComponent,
+    MyMoviesComponent
   ],
   imports: [
     BrowserModule
