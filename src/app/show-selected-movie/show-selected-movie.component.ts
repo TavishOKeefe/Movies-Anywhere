@@ -9,6 +9,11 @@ import { Movie } from '../models/movie.model';
 export class ShowSelectedMovieComponent implements OnInit {
 
   @Input() childSelectedMovie: Movie;
+  @Output() clickedDone = new EventEmitter();
+
+  finishedViewingFilm(){
+    this.clickedDone.emit();
+  }
 
   constructor() { }
 
