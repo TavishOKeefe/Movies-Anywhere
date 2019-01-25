@@ -1,0 +1,23 @@
+<div class="container">
+  <div id="redeemPage">
+    <h1>Got a digital code?</h1>
+    <h1>Redeem it now!</h1>
+    <p>Movies Anywhere lets you seamlessly store your favorite movies in one place so you can watch them when and where you want. Learn more</p><br/>
+
+    <label>Before clicking on the REDEEM button, please see the terms and conditions below*</label><br/>
+    <input type="text" #redeemCode class="form-control"><br/>
+
+      <form class="redeemCodeInputForm">
+        <button (click)="submitRedeem(name.redeemCode); redeemCode.value='';" class="btn btn-primary">REDEEM</button>
+      </form>
+
+      <ol>
+        <li>Find your digital code in your DVD or Blu-ray Case Insert</li>
+        <li>Enter the digital code in the field above</li>
+        <li>Sit back and enjoy the show!</li>
+      </ol>
+      <br>
+
+      <p>*FOR COMBINATION PACKS: Digital codes originally packaged in a combination disc + code package (for example, a combination package that includes a DVD, Blu-ray, and/or 4K/UHD disc(s) and a digital code) are not authorized for redemption if sold separately. By redeeming one of these codes, you are representing that you, or a member of your family, obtained the code in an original disc + code package and the code was not purchased separately. Your representation is a condition of redemption of the code and of your obtaining a license to access a digital copy of the movie. To read all terms and conditions applicable to using your Movies Anywhere account, click here. If you agree, click the REDEEM button above.</p>
+    </div>
+  </div>
