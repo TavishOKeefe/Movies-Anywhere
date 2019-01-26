@@ -26,7 +26,7 @@ const appRoutes: Routes = [
     component: MyMoviesComponent
   },
   {
-    path: 'movie-list',
+    path: '',
     component: MovieListComponent
   },
   {
