@@ -12,23 +12,27 @@ _This application will do its best to replicate the functionality and appearance
 * _**Build model folder to construct movie objects.**_
 * _**Create component to display objects.**_
 * _**Create Explore component.**_
+* _**Write HTML for Explore component.**_
 * _**Create Redeem component.**_
+* _**Write HTML for Redeem component.**_
 * _**Create MyMovies component.**_
+* _**Write HTML for MyMovies component.**_
 * _**Create Search component.**_
+* _**Write HTML for Search component.**_
 * _**Create Log In component.**_
+* _**Write HTML for Log In component.**_
 * _**Create Get Started component.**_
+* _**Write HTML for Get Started component.**_
+* _**Create routs to various pages through app.routing.**_
 
 ## _Setup/Installation Requirements_
 
-* _Go to https://developer.betterdoctor.com/, and register for a unique API key._
 * _Clone repository to your desktop_
 * _Open in Atom, or text and source code editor of your choosing._
 * _Install Node.js on your desktop, if not already installed._
+* _Install Angular on your desktop, if not already installed._
 * _Run npm install command through terminal, within project directory._
-* _Update code to use your unique API key._
-* _Run npm run start to launch application._
-
-
+* _Run ng serve --open to launch application._
 
 ## Known Bugs
 
@@ -42,7 +46,7 @@ _Tavish OKeefe: okeefe.tavish@gmail.com_
 
 * _Node_
 * _Angular_
-* _JavaScript_
+* _TypeScript_
 * _Karma_
 * _eslint_
 * _Webpack_
