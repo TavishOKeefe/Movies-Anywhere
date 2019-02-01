@@ -28,7 +28,7 @@ _This application will do its best to replicate the functionality and appearance
 * _**Link application to Firebase.**_
 * _**Create a data base within Firebase.**_
 * _**Link to an API**_
-* _**Link API to application.**_
+* _**Link external API, movie information, to application.**_
 * _**Link API to Firebase database.**_
 * _**Style project to look like a working application.**_
 * _**Launch application.**_
