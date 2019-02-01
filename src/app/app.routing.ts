@@ -8,6 +8,7 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { GetStartedComponent } from './get-started/get-started.component';
 import { MovieDetailComponent }   from './movie-detail/movie-detail.component';
+import { ExploreComponent }   from './explore/explore.component';
 
 const appRoutes: Routes = [
   {
@@ -28,7 +29,7 @@ const appRoutes: Routes = [
   },
   {
     path: '',
-    component: MovieListComponent
+    component: ExploreComponent
   },
   {
     path: 'log-in',

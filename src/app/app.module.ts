@@ -11,6 +11,7 @@ import { LogInComponent } from './log-in/log-in.component';
 import { GetStartedComponent } from './get-started/get-started.component';
 import { routing } from './app.routing';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { ExploreComponent } from './explore/explore.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     SearchComponent,
     LogInComponent,
     GetStartedComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    ExploreComponent
   ],
   imports: [
     BrowserModule,
