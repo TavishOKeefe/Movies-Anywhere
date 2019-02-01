@@ -1,18 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Movie } from './models/movie.model';
+import { MovieService } from './movie.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [MovieService]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  constructor( private movieService: MovieService) {}
 
   masterMovieList: Movie[] = [
-  new Movie("Venom", 1),
-  new Movie("It's a Wonderful Life", 2),
-  new Movie("The Hustler", 3),
-  new Movie("Rear Window", 4)
   ];
 
   selectedMovie = null;
@@ -23,6 +23,10 @@ export class AppComponent {
 
   finishedViewing(){
     this.selectedMovie = null;
+  }
+
+  ngOnInit(){
+    this.masterMovieList = this.movieService.getMovies();
   }
 
 }
