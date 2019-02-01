@@ -8,8 +8,13 @@ import { LogInComponent } from './log-in/log-in.component';
 import { GetStartedComponent } from './get-started/get-started.component';
 import { MovieDetailComponent }   from './movie-detail/movie-detail.component';
 import { ExploreComponent }   from './explore/explore.component';
+import { SearchedMovieComponent }   from './searched-movie/searched-movie.component';
 
 const appRoutes: Routes = [
+  {
+    path: 'searched-movie',
+    component: SearchedMovieComponent
+  },
   {
     path: 'search',
     component: SearchComponent
