@@ -14,6 +14,9 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+import { HttpModule } from '@angular/http';
+import { SearchedMovieComponent } from './searched-movie/searched-movie.component';
+
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
@@ -31,9 +34,11 @@ export const firebaseConfig = {
     LogInComponent,
     GetStartedComponent,
     MovieDetailComponent,
-    ExploreComponent
+    ExploreComponent,
+    SearchedMovieComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     routing
   ],

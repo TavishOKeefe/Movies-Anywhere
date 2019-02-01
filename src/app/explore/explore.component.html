@@ -1,3 +1,21 @@
 
+<form>
+  <div class="form-group">
+    <h1>Search for a movie</h1>
+    <div>
+      <label>Enter a movie title:</label>
+      <input #newMovie>
+    </div>
+    <button (click)="getMovieInfo(newMovie.value); newMovie.value='';">Search</button>
+  </div>
+</form>
 
-<app-movie-list [childMovieList]="masterMovieList"></app-movie-list>
+<!-- <h2>This movie title is: {{movieDescriptions.title[0]}}</h2>
+<h2>This movie has id number: {{movieDescriptions.id[0]}}</h2> -->
+
+
+<!-- <app-movie-list [childMovieList]="masterMovieList"></app-movie-list> -->
+
+<div *ngIf="movieDescriptions">
+  <app-searched-movie [childMovieDescriptions]="movieDescriptions"></app-searched-movie>
+</div>
