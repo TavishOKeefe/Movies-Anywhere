@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Movie } from '../models/movie.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-movie-list',
@@ -7,15 +8,19 @@ import { Movie } from '../models/movie.model';
   styleUrls: ['./movie-list.component.css']
 })
 export class MovieListComponent implements OnInit {
+  constructor(private router: Router) { }
 
   @Input() childMovieList: Movie[];
-  @Output() clickSender = new EventEmitter();
+  // @Output() clickSender = new EventEmitter();
 
-  movieClicked(currentMovie: Movie) {
-    this.clickSender.emit(currentMovie);
-  }
+  goToDetailPage(clickedMovie: Movie) {
+    this.router.navigate(['movies', clickedMovie.id]);
+  };
 
-  constructor() { }
+  // movieClicked(currentMovie: Movie) {
+  //   this.clickSender.emit(currentMovie);
+  // }
+
 
   ngOnInit() {
   }

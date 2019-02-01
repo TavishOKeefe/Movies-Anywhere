@@ -7,6 +7,7 @@ import { MyMoviesComponent } from './my-movies/my-movies.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { GetStartedComponent } from './get-started/get-started.component';
+import { MovieDetailComponent }   from './movie-detail/movie-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -37,6 +38,10 @@ const appRoutes: Routes = [
     path: 'get-started',
     component: GetStartedComponent
   },
+  {
+    path: 'movies/:id',
+    component: MovieDetailComponent
+  }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

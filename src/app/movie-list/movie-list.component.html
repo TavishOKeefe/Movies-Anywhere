@@ -1,3 +1,9 @@
-<ul>
+<div *ngFor="let currentMovie of childMovieList" (click)="goToDetailPage(currentMovie)" class="panel panel-default">
+  <div class="panel-body">
+    <h4><em>{{currentMovie.title}}</em></h4>
+  </div>
+</div>
+
+<!-- <ul>
  <li *ngFor="let currentMovie of childMovieList" (click)="movieClicked(currentMovie)"><a routerLink="show-selected-movie">{{currentMovie.title}}</a></li>
-</ul>
+</ul> -->

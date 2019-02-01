@@ -9,10 +9,10 @@ import { Movie } from './models/movie.model';
 export class AppComponent {
 
   masterMovieList: Movie[] = [
-  new Movie("Venom"),
-  new Movie("It's a Wonderful Life"),
-  new Movie("The Hustler"),
-  new Movie("Rear Window")
+  new Movie("Venom", 1),
+  new Movie("It's a Wonderful Life", 2),
+  new Movie("The Hustler", 3),
+  new Movie("Rear Window", 4)
   ];
 
   selectedMovie = null;
