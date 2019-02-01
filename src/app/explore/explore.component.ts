@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Movie } from '../models/movie.model';
 import { MovieService } from '../movie.service';
-// import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-explore',
