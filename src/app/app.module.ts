@@ -10,7 +10,16 @@ import { GetStartedComponent } from './get-started/get-started.component';
 import { routing } from './app.routing';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { ExploreComponent } from './explore/explore.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
