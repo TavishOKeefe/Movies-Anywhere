@@ -16,16 +16,6 @@ export class ExploreComponent implements OnInit {
     masterMovieList: Movie[] = [
     ];
 
-    selectedMovie = null;
-
-    showMovie(clickedMovie){
-      this.selectedMovie = clickedMovie;
-    }
-
-    finishedViewing(){
-      this.selectedMovie = null;
-    }
-
     ngOnInit(){
       this.masterMovieList = this.movieService.getMovies();
     }

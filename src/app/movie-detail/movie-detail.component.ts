@@ -12,7 +12,10 @@ import { MovieService } from '../movie.service';
 })
 export class MovieDetailComponent implements OnInit {
 
-  movieId: number = null;
+  movieId: number;
+  movieToDisplay: Movie;
+
+  // movieId: number = null;
 
   constructor(private route: ActivatedRoute, private location: Location, private movieService: MovieService) { }
 
@@ -20,6 +23,7 @@ export class MovieDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
      this.movieId = parseInt(urlParameters['id']);
    });
+   this.movieToDisplay = this.movieService.getMovieById(this.movieId);
   }
 
 }
