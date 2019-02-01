@@ -24,6 +24,15 @@ _This application will do its best to replicate the functionality and appearance
 * _**Create Get Started component.**_
 * _**Write HTML for Get Started component.**_
 * _**Create routs to various pages through app.routing.**_
+* _**Refactor code to incorporate dynamic id's.**_
+* _**Link application to Firebase.**_
+* _**Create a data base within Firebase.**_
+* _**Link to an API**_
+* _**Link API to application.**_
+* _**Link API to Firebase database.**_
+* _**Style project to look like a working application.**_
+* _**Launch application.**_
+
 
 ## _Setup/Installation Requirements_
 
