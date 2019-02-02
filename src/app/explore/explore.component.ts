@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Movie } from '../models/movie.model';
-// import { MovieService } from '../movie.service';
+import { MovieService } from '../movie.service';
 import { MoviesAnywhereApiService } from '../movies-anywhere-api.service';
 
 @Component({
   selector: 'app-explore',
   templateUrl: './explore.component.html',
   styleUrls: ['./explore.component.css'],
-  providers: [MoviesAnywhereApiService]
+  providers: [MovieService, MoviesAnywhereApiService]
 })
 export class ExploreComponent implements OnInit {
 
   movieDescriptions: any[] = null;
 
-  constructor( private moviesAnywhereApiService: MoviesAnywhereApiService) { }
+  constructor( private movieService: MovieService, private moviesAnywhereApiService: MoviesAnywhereApiService) { }
 
     getMovieInfo(title: string){
       debugger;
@@ -28,7 +28,7 @@ export class ExploreComponent implements OnInit {
     ];
 
     ngOnInit(){
-      // this.masterMovieList = this.movieService.getMovies();
+      this.masterMovieList = this.movieService.getMovies();
     }
 
 }
